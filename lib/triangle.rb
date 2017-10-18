@@ -10,9 +10,9 @@ class Triangle
 
   def kind
     if(side_A < 0 || side_B < 0 || side_C < 0)
-      raise TriangleError => error
-        puts error.message
-      end        
+      raise TriangleError
+    end
+          
   end
 
 end
