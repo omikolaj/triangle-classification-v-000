@@ -12,10 +12,11 @@ class Triangle
     binding.pry
     if(side_A < 0 || side_B < 0 || side_C < 0) || ((side_A + side_B) < side_C) || ((side_B + side_C) < side_A) || ((side_C + side_A) < side_B)
       raise TriangleError
-    elsif (side_A == side_B) || (side_B == side_C) || (side_C == side_A)
-      :isoceles
     elsif (side_A == side_B) && (side_B == side_C) && (side_C == side_A)
       :equilateral
+    elsif (side_A == side_B) || (side_B == side_C) || (side_C == side_A)
+      :isoceles
+
     else
       :scalene
     end
