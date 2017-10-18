@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :side_A, :side_B, :side_C, :kind
+  attr_accessor :side_A, :side_B, :side_C
 
   def initialize(side_A: ,side_B: ,side_C:)
     @side_A = side_A
@@ -11,6 +11,7 @@ class Triangle
   def kind
     if(side_A < 0 || side_B < 0 || side_C < 0)
       raise TriangleError
+
     end
 
   end
