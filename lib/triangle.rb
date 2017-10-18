@@ -9,7 +9,13 @@ class Triangle
   end
 
   def kind
-
+    if(side_A + side_B )
   end
 
+end
+
+class TriangleError < StandardError
+  def message
+    "These measurements are not valid for a triangle. They break the triangle inequality principle!"
+  end
 end
