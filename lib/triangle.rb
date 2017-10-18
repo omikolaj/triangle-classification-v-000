@@ -15,7 +15,7 @@ class Triangle
     elsif (side_A == side_B) && (side_B == side_C) && (side_C == side_A)
       :equilateral
     elsif (side_A == side_B) || (side_B == side_C) || (side_C == side_A)
-      :isoceles
+      :isosceles
 
     else
       :scalene
